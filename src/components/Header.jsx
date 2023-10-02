@@ -12,8 +12,8 @@ const Header = ({pantallaTablet, pantallaDesktop}) => {
 
     const [scrollDown, setScrollDown] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
 
+    
     const handleScroll = () => {
         if (window.scrollY > 10) { 
             setScrollDown(true);
@@ -30,8 +30,9 @@ const Header = ({pantallaTablet, pantallaDesktop}) => {
         };
       }, []);
 
+
+      
     const openMenu = (e) => {
-        e.stopPropagation();
         setIsMenuOpen(true);
         document.body.classList.add('overflow-hidden');
       };
@@ -104,10 +105,11 @@ const Header = ({pantallaTablet, pantallaDesktop}) => {
                 </div>
 
 
-                <nav className={`w-full h-screen absolute z-50 px-4 py-4 text-white bg-[#181818] top-0 left-0 ${!isMenuOpen && 'none'}`}>
+                <nav className={`w-full h-screen absolute z-50 px-4 py-4 text-white bg-[#181818] top-0 left-0 ${!isMenuOpen && 'hidden'}`}>
+
 
                     <div className='flex flex-row-reverse justify-between'>
-                        <div onClick={closeMenu}><img className='w-8 mr-5 mt-5' src={imgClose} alt="closeIcon"/></div>
+                        <a href='#' onClick={closeMenu}><img className='w-8 mr-5 mt-5' src={imgClose} alt="closeIcon"/></a>
                     </div>
                     
                     <div className='flex flex-col text-xl mx-auto max-w-screen-desktop tablet:text-2xl desktop:text-4xl'>
