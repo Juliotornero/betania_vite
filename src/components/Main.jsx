@@ -16,7 +16,6 @@ const Main = ({pantallaTablet, pantallaDesktop}) => {
       />
 
       <Map/>
-
         
     </main>
 
