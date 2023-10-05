@@ -4,12 +4,13 @@ import imgClose from '../assets/close.svg'
 import logoWhite from '../assets/logoWhite.svg'
 import logoBlack from '../assets/logoBlack.svg'
 import logoName from '../assets/logoName.svg'
-import logoNameWhite from '../assets/logoNameWhite.svg'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { usePantalla } from './PantallaContext';
 
-const Header = ({pantallaTablet, pantallaDesktop}) => {
+const Header = () => {
 
-
+    const { pantallaTablet, pantallaDesktop } = usePantalla();
     const [scrollDown, setScrollDown] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -46,9 +47,9 @@ const Header = ({pantallaTablet, pantallaDesktop}) => {
       
     
     return (
-        <>
+      
 
-        <header className={`w-full h-screen relative ${pantallaDesktop ? 'imgHeaderDesktop' : 'imgHeader'}`}>
+        <header className='w-full absolute top-0 left-0'>
 
                 <div className={`z-30 w-full h-[70px] px-4 flex items-center ${scrollDown ? 'fixed bg-white  border border-b-2' : 'bg-transparent'} tablet:h-[90px]`}> 
                      
@@ -107,11 +108,12 @@ const Header = ({pantallaTablet, pantallaDesktop}) => {
 
                         <div className='flex flex-col text-xl mx-auto max-w-screen-desktop tablet:text-2xl desktop:text-4xl'>
                             <span className='mt-20 mb-16 text-center p-2'><img className='w-16 desktop:w-28' src={logoWhite} alt="" /></span>
-                            <a href="#" className='my-3 hover:text-[#89745C]'>HABITACIONES</a>
-                            <a href="#" className='my-3 hover:text-[#89745C]'>SERVICIOS</a>
-                            <a href="#" className='my-3 hover:text-[#89745C]'>ATRACCIONES EN PISCO</a>
-                            <a href="#" className='my-3 hover:text-[#89745C]'>PREGUNTAS PRECUENTES</a>
-                            <a href="#" className='my-3 hover:text-[#89745C]'>CONTACTO</a>
+                            <Link to="/" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>INICIO</Link>
+                            <Link to="/habitaciones" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>HABITACIONES</Link>
+                            <Link to="/servicios" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>SERVICIOS</Link>
+                            <Link to="/pisco" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>ATRACCIONES EN PISCO</Link>
+                            <Link to="/preguntas" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>PREGUNTAS PRECUENTES</Link>
+                            <Link to="/contacto" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>CONTACTO</Link>
                             <button className='uppercase mt-10 px-5 py-2 w-[190px] text-sm font-work rounded border-2 bg-transparent hover:bg-white hover:text-black tablet:text-2xl desktop:text-2xl desktop:w-[200px]'>Reserva</button>
                         </div>
 
@@ -119,13 +121,9 @@ const Header = ({pantallaTablet, pantallaDesktop}) => {
 
                 </div>
 
-                <div className='absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-full'>
-                    <img className='w-[300px] tablet:w-[450px] desktop:w-[550px]' src={logoNameWhite} alt="Logo Be'Tania"/>
-                </div>
-
 
         </header>
-        </>
+        
     )
 }
 

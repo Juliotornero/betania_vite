@@ -37,7 +37,7 @@ const SectionRoomService = ({pantallaDesktop}) => {
 
         </div>
 
-        <section className='bg-[#B7A18B] w-full h-fit  tablet:absolute tablet:top-[80%] desktop:top-[85%]'>
+        <section className='bg-[#c9b199] w-full h-fit  tablet:absolute tablet:top-[80%] desktop:top-[85%]'>
 
             <div className='max-w-[700px] py-12 px-4 mx-auto min-w-[290px] flex flex-col text-left text-white
                 tablet:flex-row tablet:items-start tablet:my-20 desktop:my-32 desktop:max-w-[1100px] 

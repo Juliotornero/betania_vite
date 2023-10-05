@@ -24,20 +24,20 @@ const SectionDiscover = ({pantallaTablet}) => {
             <div className='mt-10 flex flex-row max-w-screen-desktop mx-auto'>
                   
               
-                <article className="relative w-full h-[100%] flex group overflow-hidden mx-2">
+                <article className="relative w-full h-full flex group overflow-hidden mx-2">
                         <img
                           src={discoverRom}
                           alt="Imagen de Cuarto"
                           className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                         />
                         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
-                          <p className="text-white text-4xl font-bold tracking-wide">Habitaciones</p>
+                          <p className="text-white text-3xl font-bold tracking-wide">Habitaciones</p>
                           <DiscoverButton/>
                         </div>
                 </article>
 
               
-                <article className="relative w-full h-[100%] flex group overflow-hidden mx-2">
+                <article className="relative w-full h-full flex group overflow-hidden mx-2">
                     
                       
                     <img
@@ -46,7 +46,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
                     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
-                      <p className="text-white text-4xl font-bold tracking-wide">Servicios</p>
+                      <p className="text-white text-3xl font-bold tracking-wide">Servicios</p>
                       <DiscoverButton/>
                     </div>
                   
@@ -54,7 +54,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                 </article>
                 
           
-                <article className="relative w-full h-[100%] flex group overflow-hidden mx-2">
+                <article className="relative w-full h-full flex group overflow-hidden mx-2">
                     
                       
                     <img
@@ -63,7 +63,23 @@ const SectionDiscover = ({pantallaTablet}) => {
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
                     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
-                      <p className="text-white text-4xl font-bold tracking-wide">Ofertas</p>
+                      <p className="text-white text-3xl font-bold tracking-wide">Ofertas</p>
+                      <DiscoverButton/>
+                    </div>
+                  
+                
+                </article>
+
+                <article className="relative w-full h-full flex group overflow-hidden mx-2">
+                    
+                      
+                    <img
+                      src={discoverRom}
+                      alt="Imagen de Cuarto"
+                      className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
+                    />
+                    <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                      <p className="text-white text-3xl font-bold tracking-wide">Conoce Pisco</p>
                       <DiscoverButton/>
                     </div>
                   
@@ -114,6 +130,19 @@ const SectionDiscover = ({pantallaTablet}) => {
                           />
                           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                           <p className="text-white text-3xl font-bold tracking-wide">Ofertas</p>
+                          <DiscoverButton/>
+                          </div>
+                      </article>
+
+                      {/* Slide 3 */}
+                      <article className="w-full h-auto flex group overflow-hidden">
+                          <img
+                            src={discoverRom}
+                            alt="Imagen de Cuarto"
+                            className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
+                          />
+                          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                          <p className="text-white text-3xl font-bold tracking-wide">Pisco</p>
                           <DiscoverButton/>
                           </div>
                       </article>
