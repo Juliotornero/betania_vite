@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../../src/App.css";
 import mapboxgl from "mapbox-gl"; // Importa mapboxgl
 import "mapbox-gl/dist/mapbox-gl.css";
+import reload from '../assets/reloadIcon.svg'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaG9zcGVkYWplYmV0YW5pYSIsImEiOiJjbG42OXZncXcwOTgyMmlwNXo4OTAyaG54In0.LrEpBd3umk6dBDMka2QGJg';
 
@@ -43,13 +44,13 @@ const Map = () => {
   
   return (
     <>
-        <section className="relative py-1">
+        <section className="relative">
           <header className='flex flex-col justify-center items-center'>
               <h1 className='mb-5 font-work uppercase text-sm font-bold'>encuéntranos</h1>
           </header>
 
           <div ref={mapContainer} className="map-container"/>
-          <button className="absolute top-[13%] right-3 tablet:top-[8%] tablet:right-3 bg-blue-500 text-white px-2 py-2 rounded-md" onClick={resetMap}>Restablecer Mapa</button>
+          <button onClick={resetMap} className="absolute top-[13%] right-3 tablet:top-[8%] tablet:right-3 bg-[#181818] text-white px-2 py-2 rounded-md"><img src={reload} alt="Logo Facebook"/></button>
 
         </section>
         
