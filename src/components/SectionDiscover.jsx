@@ -4,7 +4,7 @@ import discoverRom from '../assets/discoverRoom.jpg'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import DiscoverButton from './DiscoveButton';
-
+import "../../src/App.css";
 
 const SectionDiscover = ({pantallaTablet}) => {
   
