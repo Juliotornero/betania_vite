@@ -1,11 +1,10 @@
-import React from 'react'
-import logoName from '../assets/logoName.svg'
-import discoverRom from '../assets/discoverRoom.jpg'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import DiscoverButton from './DiscoveButton';
-
-
+import habitacion from '../assets/habitacion.jpg'
+import servicios from '../assets/servicios.jpg'
+import ofertas from '../assets/ofertas.jpg'
+import pisco from '../assets/pisco.png'
 const SectionDiscover = ({pantallaTablet}) => {
   
   return (
@@ -21,12 +20,12 @@ const SectionDiscover = ({pantallaTablet}) => {
         {pantallaTablet 
         
           ? 
-            <div className='mt-10 flex flex-row max-w-screen-desktop mx-auto'>
+            <div className='mt-10 flex flex-row max-w-screen-desktop'>
                   
               
-                <article className="relative w-full h-full flex group overflow-hidden mx-2">
+                <article className="relative w-full h-[480px] flex group overflow-hidden mx-2">
                         <img
-                          src={discoverRom}
+                          src={habitacion}
                           alt="Imagen de Cuarto"
                           className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                         />
@@ -37,11 +36,11 @@ const SectionDiscover = ({pantallaTablet}) => {
                 </article>
 
               
-                <article className="relative w-full h-full flex group overflow-hidden mx-2">
+                <article className="relative w-full h-[480px] flex group overflow-hidden mx-2">
                     
                       
                     <img
-                      src={discoverRom}
+                      src={servicios}
                       alt="Imagen de Cuarto"
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
@@ -54,11 +53,11 @@ const SectionDiscover = ({pantallaTablet}) => {
                 </article>
                 
           
-                <article className="relative w-full h-full flex group overflow-hidden mx-2">
+                <article className="relative w-full h-[480px] flex group overflow-hidden mx-2">
                     
                       
                     <img
-                      src={discoverRom}
+                      src={ofertas}
                       alt="Imagen de Cuarto"
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
@@ -70,11 +69,11 @@ const SectionDiscover = ({pantallaTablet}) => {
                 
                 </article>
 
-                <article className="relative w-full h-full flex group overflow-hidden mx-2">
+                <article className="relative w-full h-[480px] flex group overflow-hidden mx-2">
                     
                       
                     <img
-                      src={discoverRom}
+                      src={pisco}
                       alt="Imagen de Cuarto"
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
@@ -90,15 +89,15 @@ const SectionDiscover = ({pantallaTablet}) => {
             <div className='flex border relative mx-auto'>
               <Carousel
                           showStatus={false}
-                          showArrows={false}
+                          showArrows={true}
                           autoPlay={false}
                           showThumbs={false}
-                          swipeable={true}
+                          swipeable={false}
                     >
                     {/* Slide 1 */}
                       <article className="w-full h-full flex group overflow-hidden">
                           <img
-                            src={discoverRom}
+                            src={habitacion}
                             alt="Imagen de Cuarto"
                             className="transition-transform transform scale-100 group-hover:scale-105"
                           />
@@ -111,7 +110,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                     {/* Slide 2 */}
                       <article className="w-full h-auto flex group overflow-hidden">  
                           <img
-                            src={discoverRom}
+                            src={servicios}
                             alt="Imagen de Cuarto"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
@@ -124,7 +123,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                     {/* Slide 3 */}
                       <article className="w-full h-auto flex group overflow-hidden">
                           <img
-                            src={discoverRom}
+                            src={ofertas}
                             alt="Imagen de Cuarto"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
@@ -137,7 +136,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                       {/* Slide 3 */}
                       <article className="w-full h-auto flex group overflow-hidden">
                           <img
-                            src={discoverRom}
+                            src={pisco}
                             alt="Imagen de Cuarto"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />

@@ -60,9 +60,9 @@ const Footer = () => {
                 
                 {/* Social Media */}
                 <div className="flex -mx-2">   
-                    <a href="#" className="mx-2"><img src={facebook} alt="Logo Facebook"/></a>
-                    <a href="#" className="mx-2"><img src={instagram} alt="Logo Instagram"/></a>
-                    <a href="#" className="mx-2"><img src={whatsapp} alt="Logo Whastapp"/></a> 
+                    <a href="/" className="mx-2"><img src={facebook} alt="Logo Facebook"/></a>
+                    <a href="/" className="mx-2"><img src={instagram} alt="Logo Instagram"/></a>
+                    <a href="/" className="mx-2"><img src={whatsapp} alt="Logo Whastapp"/></a> 
                 </div>
             </div>
             
