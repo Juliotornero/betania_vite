@@ -87,7 +87,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                 </article>
             </div>
           : 
-            <div className='flex border relative  mx-auto'>
+            <div className='flex relative mx-auto my-carousel'>
               <Carousel
                           showStatus={false}
                           showArrows={false}

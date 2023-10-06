@@ -60,9 +60,9 @@ const SectionRoomService = ({pantallaDesktop}) => {
                     '> 
                     <h1 className='mt-7 capitalize font-bold text-3xl tablet:mt-0 desktop:text-5xl desktop:mb-12 desktop:leading-normal'>Te invitamos a relajarte</h1>
 
-                    <p className='mt-7 font-work font-normal text-sm tablet:text-xs desktop:text-base text-white desktop:mb-8 desktop:leading-normal'>En Hospedaje Be' Tania, cada habitación ha sido pensada como un espacio propio en el centro de Pisco. Nuestro diseño impecable incorpora comodidades residenciales y toques modernos para brindarte una experiencia hogareña única.</p>
+                    <p className='mt-7 mb-7 font-work font-normal text-sm tablet:text-xs desktop:text-base text-white desktop:mb-8 desktop:leading-normal'>En Hospedaje Be' Tania, cada habitación ha sido pensada como un espacio propio en el centro de Pisco. Nuestro diseño impecable incorpora comodidades residenciales y toques modernos para brindarte una experiencia hogareña única.</p>
 
-                    <Link to="/habitaciones" className='mt-7 p-3 w-3/4 max-w-[180px] text-[10px] tracking-wider border uppercase font-work border-white hover:bg-white hover:text-[#B7A18B] rounded desktop:text-xs desktop:py-4'>
+                    <Link to="/habitaciones" className='p-3 w-3/4 max-w-[180px] text-[10px] tracking-wider border uppercase font-work border-white hover:bg-white hover:text-[#B7A18B] rounded desktop:text-xs desktop:py-4'>
                         Ver Habitaciones
                     </Link>   
 
