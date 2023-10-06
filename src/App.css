@@ -7,13 +7,14 @@ body{
     height: 450px;
   }
   
+
+.my-carousel {
+    touch-action: pan-y; /* Evita el deslizamiento vertical */
+  }
+
   @media (min-width: 1024px) {
     .map-container {
       width: 100%;
       height: 700px;
     }
-  }
-
-  .my-carousel {
-    touch-action: pan-y; /* Evita el deslizamiento vertical */
   }

@@ -4,10 +4,34 @@ import discoverRom from '../assets/discoverRoom.jpg'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import DiscoverButton from './DiscoveButton';
-import "../../src/App.css";
+import { useState } from 'react';
 
 const SectionDiscover = ({pantallaTablet}) => {
-  
+  const [startX, setStartX] = useState(null);
+  const [startY, setStartY] = useState(null);
+
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+    setStartY(e.touches[0].clientY);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!startX || !startY) return;
+
+    const deltaX = e.touches[0].clientX - startX;
+    const deltaY = e.touches[0].clientY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      // El gesto es principalmente horizontal, permitir el desplazamiento horizontal
+      e.stopPropagation();
+    } else {
+      // El gesto es principalmente vertical, permitir el desplazamiento vertical
+    }
+
+    setStartX(null);
+    setStartY(null);
+  };
+
   return (
     <>
     <section className="flex flex-col px-4 py-14 mx-auto">
@@ -87,7 +111,13 @@ const SectionDiscover = ({pantallaTablet}) => {
                 </article>
             </div>
           : 
-            <div className='flex relative mx-auto my-carousel'>
+            <>
+              <div
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                style={{ overflowY: 'scroll' }}
+              >
+                  <div className='flex relative mx-auto my-carousel'>
               <Carousel
                           showStatus={false}
                           showArrows={false}
@@ -103,7 +133,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                             className="transition-transform transform scale-100 group-hover:scale-105"
                           />
                           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
-                                <p className="text-white text-3xl font-bold tracking-wide">Habitaciones</p>
+                                <p className="text-white text-3xl font-bold tracking-wide">Habitacionees</p>
                                 <DiscoverButton/>
                           </div>
                       </article>
@@ -148,7 +178,12 @@ const SectionDiscover = ({pantallaTablet}) => {
                       </article>
 
               </Carousel>
-            </div>
+                  </div>
+            
+              </div>
+            
+            </>
+           
         }
    
     </section>
