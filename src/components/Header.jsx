@@ -34,13 +34,11 @@ const Header = () => {
 
       
     const openMenu = () => {
-        console.log('Abriendo')
         setIsMenuOpen(true);
         document.body.classList.add('overflow-hidden');
       };
       
     const closeMenu = () => {
-        console.log('Cerrando')
         setIsMenuOpen(false);
         document.body.classList.remove('overflow-hidden');
       };
@@ -100,25 +98,25 @@ const Header = () => {
                         
                     </div>
                     
-                    <nav className={`w-screen h-screen absolute top-0 left-0 z-50 px-4 py-4 text-white bg-[#181818] ${!isMenuOpen && 'hidden'}`}>
+                    <nav className={`w-screen h-screen absolute top-0 left-0 z-50 text-white bg-[#181818] ${!isMenuOpen && 'hidden'}`}>
+                        <div className='flex flex-col w-full h-full mx-auto max-w-screen-desktop pl-5 tablet:pl-5 desktop:pl-0'>
 
-                        <div className='flex flex-row-reverse justify-between'>
-                            <button onClick={closeMenu}><img className='w-8 mr-5 mt-5' src={imgClose} alt="closeIcon"/></button>
+                            <div className='flex justify-between items-center py-6'>
+                                <button onClick={closeMenu}><img className='w-9' src={imgClose} alt="closeIcon"/></button>
+                            </div>
+
+                            <div className='flex-1 flex flex-col justify-center items-start text-xl tablet:text-2xl desktop:text-4xl'>
+                                <span className='mb-10 text-center'><img className='w-16 desktop:w-28' src={logoWhite} alt="Logo Betania" /></span>
+                                <Link to="/" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>INICIO</Link>
+                                <Link to="/habitaciones" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>HABITACIONES</Link>
+                                <Link to="/servicios" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>SERVICIOS</Link>
+                                <Link to="/pisco" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>ATRACCIONES EN PISCO</Link>
+                                <Link to="/preguntas" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>PREGUNTAS PRECUENTES</Link>
+                                <Link to="/contacto" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>CONTACTO</Link>
+                                <button className='uppercase mt-5 py-2 w-[190px] text-sm font-work rounded border-2 bg-transparent hover:bg-white hover:text-black tablet:text-2xl desktop:text-2xl desktop:w-[200px]'>Reserva</button>
+                            </div>
                         </div>
-
-                        <div className='flex flex-col text-xl mx-auto max-w-screen-desktop tablet:text-2xl desktop:text-4xl'>
-                            <span className='mt-20 mb-16 text-center p-2'><img className='w-16 desktop:w-28' src={logoWhite} alt="" /></span>
-                            <Link to="/" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>INICIO</Link>
-                            <Link to="/habitaciones" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>HABITACIONES</Link>
-                            <Link to="/servicios" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>SERVICIOS</Link>
-                            <Link to="/pisco" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>ATRACCIONES EN PISCO</Link>
-                            <Link to="/preguntas" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>PREGUNTAS PRECUENTES</Link>
-                            <Link to="/contacto" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>CONTACTO</Link>
-                            <button className='uppercase mt-10 px-5 py-2 w-[190px] text-sm font-work rounded border-2 bg-transparent hover:bg-white hover:text-black tablet:text-2xl desktop:text-2xl desktop:w-[200px]'>Reserva</button>
-                        </div>
-
                     </nav>
-
                 </div>
 
 

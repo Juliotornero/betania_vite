@@ -9,18 +9,17 @@ const SectionDiscover = ({pantallaTablet}) => {
   
   return (
     <>
-    <section className="flex flex-col px-4 py-14 mx-auto">
+    <section className="flex flex-col py-14 mx-auto">
 
         <header className='flex flex-col justify-center items-center'>
-            <h1 className='mb-5 font-work uppercase text-sm font-bold'>Descubre</h1>
-            
+            <h1 className='mb-5 font-work uppercase text-sm font-bold'>Descubre</h1>  
         </header>
 
         
         {pantallaTablet 
         
           ? 
-            <div className='mt-10 flex flex-row max-w-screen-desktop mx-auto'>
+            <div className='mt-10 max-w-screen-desktop mx-auto grid tablet:grid-cols-2 desktop:grid-cols-4 gap-4'>
                   
               
                 <article className="relative w-full h-[480px] flex group overflow-hidden mx-2">
@@ -78,7 +77,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
                     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
-                      <p className="text-white text-3xl font-bold tracking-wide">Conoce Pisco</p>
+                      <p className="text-white text-3xl font-bold tracking-wide text-center">Conoce Pisco</p>
                       <DiscoverButton/>
                     </div>
                   
@@ -93,6 +92,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                           autoPlay={false}
                           showThumbs={false}
                           swipeable={false}
+                          infiniteLoop={true}
                     >
                     {/* Slide 1 */}
                       <article className="w-full h-full flex group overflow-hidden">
@@ -111,7 +111,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                       <article className="w-full h-auto flex group overflow-hidden">  
                           <img
                             src={servicios}
-                            alt="Imagen de Cuarto"
+                            alt="Imagen de Servicios"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
                           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
@@ -124,7 +124,7 @@ const SectionDiscover = ({pantallaTablet}) => {
                       <article className="w-full h-auto flex group overflow-hidden">
                           <img
                             src={ofertas}
-                            alt="Imagen de Cuarto"
+                            alt="Imagen de Ofertas"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
                           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
@@ -137,12 +137,12 @@ const SectionDiscover = ({pantallaTablet}) => {
                       <article className="w-full h-auto flex group overflow-hidden">
                           <img
                             src={pisco}
-                            alt="Imagen de Cuarto"
+                            alt="Imagen de Pisco"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
                           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
-                          <p className="text-white text-3xl font-bold tracking-wide">Descubre Pisco</p>
-                          <DiscoverButton/>
+                            <p className="text-white text-3xl font-bold tracking-wide">Descubre Pisco</p>
+                            <DiscoverButton/>
                           </div>
                       </article>
 
