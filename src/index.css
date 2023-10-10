@@ -18,6 +18,21 @@
     background-position: left;
   } 
 
+  .roomMobile {
+    background-image: url(/src/assets/roomMobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .roomDesktop {
+    background-image: url(/src/assets/roomDesktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+
 
 }
 

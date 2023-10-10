@@ -15,6 +15,8 @@ import Faq from './pages/Faq'
 import Contact from './pages/Contact'
 import ClaimsBook from './pages/ClaimsBook'
 import Legal from './pages/Legal'
+import About from './pages/about';
+
 
 const router = createBrowserRouter([
   {
@@ -56,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: '/legal',
         element: <Legal />,
+      },
+      {
+        path: '/sobrenosotros',
+        element: <About/>,
       },
     ],
   },

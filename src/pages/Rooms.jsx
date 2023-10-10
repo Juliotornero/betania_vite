@@ -1,7 +1,24 @@
 import { useEffect } from 'react';
+import { usePantalla } from '../components/PantallaContext';
+import lobbySection from '../assets/lobby.jpg'
+import toiletRoom from '../assets/toilet.jpg'
+import people from '../assets/roomPeople.svg'
+import area from '../assets/roomArea.svg'
+
+import chromeCast from '../assets/IconsRoom/castIcon.svg'
+import fan from '../assets/IconsRoom/fanIcon.svg'
+import netflix from '../assets/IconsRoom/netflixIcon.svg'
+import pet from '../assets/IconsRoom/petIcon.svg'
+import prime from '../assets/IconsRoom/primeIcon.svg'
+import tv from '../assets/IconsRoom/tvIcon.svg'
+import wifi from '../assets/IconsRoom/wifiIcon.svg'
+import youtube from '../assets/IconsRoom/youtubeIcon.svg'
+
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Rooms = () => {
-
+  const { pantallaDesktop } = usePantalla();  
   useEffect(() => {
     // Cuando el componente se monta (cuando se navega a esta página), desplázate al inicio de la página.
     window.scrollTo(0, 0);
@@ -9,44 +26,179 @@ const Rooms = () => {
 
   return (
     <>
-        
-          <div className='bg-red-200 h-[600px] flex flex-col justify-center items-center mx-4 my-10'>
-              Habitaciones
-          </div>
+        <div className={`w-full h-screen ${pantallaDesktop ? 'roomDesktop' : 'roomMobile'}`}>
+          <div className='absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-full'>
+              <h1 className='text-4xl text-white tablet:text-5xl desktop:text-7xl'>Habitaciones</h1>
+          </div> 
+        </div>
+           
+          <section className='w-full flex flex-col justify-center items-center py-16'>
 
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nemo soluta eius. Accusamus itaque iste dolorem odit tempore ducimus! Velit perferendis dicta vel pariatur debitis exercitationem nemo nulla earum deserunt.
-            Minus voluptatem eos, quam reiciendis ratione officiis odit magnam atque ullam. In, quisquam harum sed numquam deserunt ut cumque omnis minus provident voluptate illo? Ea rerum natus minima quidem ipsum.
-            Expedita possimus sequi inventore praesentium, molestias corporis excepturi esse dignissimos sint est, hic adipisci? Aliquid dolorem quidem placeat quasi itaque! Ad optio veniam corporis, mollitia natus debitis. Minima, ex similique?
-            At, cumque, ex veritatis explicabo quia velit fugit quam, quidem consectetur temporibus alias recusandae. Tenetur tempore neque eligendi ab perspiciatis fuga blanditiis? At ad cupiditate velit atque architecto sed maxime?
-            Nemo totam laborum voluptate illo iure. Rerum reiciendis assumenda impedit deleniti non exercitationem accusantium recusandae quidem nulla repellendus? Vel nulla consequatur, commodi quod fugit voluptatibus aliquam ea harum voluptates saepe?
-            Ipsum reprehenderit blanditiis magnam, sed ullam inventore quam placeat iure architecto tempora saepe voluptatibus dolorem deserunt sint quia vel molestiae voluptates. Rerum inventore eveniet neque quasi dignissimos ex perferendis modi.
-            Fugit cum, dolores aliquam praesentium vel dolor laboriosam adipisci neque recusandae reiciendis officiis ea porro commodi eius error repellendus laudantium consectetur doloremque autem nulla corrupti? Voluptates, impedit nobis. Quibusdam, deserunt.
-            Pariatur sapiente non expedita doloribus nobis, omnis odit, numquam impedit similique, repudiandae quam. Possimus voluptate culpa fuga vel aspernatur eaque labore, doloribus, tempore provident, eos a iusto placeat magnam. Eos.
-            Earum, saepe asperiores. Exercitationem optio ad ullam ipsum culpa minima sed in alias tempore rerum saepe quo est quia sunt, sit debitis quam reiciendis quos repellendus iusto fuga fugiat! Dicta!
-            Fugiat blanditiis nesciunt perferendis atque saepe dolore vero libero, suscipit recusandae quod non ullam veniam ut sequi cum doloremque quos ab, voluptatum consequuntur laborum labore id autem ratione. In, odit.
-            Cum numquam ducimus vel consectetur repellendus a omnis mollitia porro debitis dolorum tenetur accusantium similique laudantium sed harum quos, dolores esse dolore dolorem sint sapiente exercitationem eaque! Sed, possimus autem?
-            Reprehenderit libero perferendis amet alias corporis sed sapiente est. Quam facilis incidunt dicta exercitationem, necessitatibus quidem, maiores sunt laborum eligendi molestias laudantium sed iure voluptatem corrupti aliquid esse quia molestiae?
-            Quos officiis recusandae tenetur. Suscipit perspiciatis dolorum adipisci ipsum eaque, sit aperiam, tempora voluptatibus est nobis reprehenderit? Doloremque soluta excepturi suscipit accusantium sed. Magni cupiditate hic vel. Ullam, tempore ea.
-            Accusantium, aliquam? Tempore libero, ad aliquam, laudantium consectetur excepturi iusto illo deserunt deleniti magni nesciunt quisquam mollitia. Ea sint fugiat, cupiditate ratione deserunt autem aliquam quo quibusdam aperiam facilis? Ea.
-            Fugiat nesciunt iure ut cupiditate ipsa qui impedit veniam porro a quibusdam? Ipsam labore, ducimus quo excepturi facere dolorum consectetur unde numquam soluta molestiae accusamus quia obcaecati omnis ex tenetur!
-            Impedit inventore et, perspiciatis, eos explicabo voluptatibus fuga distinctio non sapiente itaque nulla, sunt molestiae dignissimos tempora quam reprehenderit ea! Error, nam dolor suscipit dicta possimus facere dolores consequatur obcaecati.
-            Laboriosam, commodi voluptatibus. Voluptatem accusamus odit saepe dolorum sapiente. Officia deserunt nesciunt ipsum molestias odio repellendus minima aliquid animi quisquam, voluptas amet deleniti consequatur magnam ex sunt alias eos sit.
-            Aperiam quae sint officiis eius praesentium dignissimos perspiciatis tempora dicta labore quidem? Ut, officiis. Commodi pariatur, voluptates ut eligendi sint vel inventore, earum error voluptatibus asperiores debitis distinctio dolorem at.
-            Amet molestias veritatis eum error temporibus, et officiis corrupti libero, recusandae animi, excepturi sed quod nesciunt. Consequuntur, vel molestias? Cupiditate impedit veritatis quibusdam id. Cupiditate, porro veniam. Doloremque, tempore ipsum.
-            Explicabo ipsam cupiditate quaerat, voluptatem aut asperiores. Est nobis dolorum eveniet voluptates explicabo numquam, totam, incidunt assumenda dolorem iste error consequatur itaque quam deleniti tempore a eos? Aut, harum ex!
-            Unde quod ad accusamus dignissimos officia pariatur reprehenderit animi facere debitis maxime natus eos, voluptas ut quae quis quia blanditiis corporis molestiae sed possimus inventore modi vitae? Dolore, architecto eius.
-            Magni iusto ad, distinctio error itaque minima saepe quasi asperiores architecto vel atque doloremque exercitationem, perferendis eius voluptate dignissimos impedit nostrum similique! Molestiae vel nemo illum non, eos numquam error.
-            Quidem officia odio fuga laborum, non architecto perferendis libero nisi officiis reiciendis repellendus accusamus aut rem ut! Modi, officiis sint ut aliquam eius rerum, libero molestias ducimus ab distinctio eligendi.
-            Molestias earum perspiciatis recusandae corrupti, numquam possimus culpa quaerat iure cum quas illo mollitia, ducimus sequi officia obcaecati, eligendi id quam nulla inventore dolore placeat magnam laborum rerum rem! Consequatur.
-            Voluptatum libero saepe tempora repellat quia dicta nostrum quasi eos atque commodi ad quod in molestias corrupti, beatae minima, optio error ducimus at, maiores sed ipsam? Fuga sed eligendi expedita!
-            Ipsum quis asperiores mollitia ullam molestias modi? Earum at sint rem ullam, esse laudantium commodi illo excepturi placeat magni, impedit nesciunt maiores laborum minus a neque quam deleniti qui modi.
-            Dolor ab amet, consectetur hic accusantium doloremque, dicta exercitationem veniam provident aperiam voluptatibus debitis minus! Esse voluptates beatae rerum modi suscipit. Ipsam facilis architecto asperiores nemo magni non laborum sapiente.
-            Odit ipsam sunt corrupti sequi architecto eaque, aut consequuntur? Corrupti quo fugit laborum dolorem sint, officia iusto et totam illum dolore dolor exercitationem quia praesentium sequi nisi quisquam dicta tempore.
-            Quas excepturi eligendi qui fugit ipsum libero eos similique. Laudantium possimus tenetur facere, impedit nihil cupiditate. Unde sint incidunt quisquam voluptatibus aperiam dolor deleniti, quod, numquam, alias vel cum! Totam.
-            Dolorem sint eius ut, similique quod, ratione recusandae molestias nisi omnis voluptate labore aspernatur quae iste cumque dolore illum qui animi esse unde inventore facilis! Aut fugit vel eveniet in.
-          </div>
-   
+            <article className='w-[95%] pb-10 px-4 in-w-[290px] flex flex-col justify-center items-center'>
+              
+              <p className='text-center font-work text-sm mb-10 tracking-widest font-bold desktop:text-xl desktop:mb-16'>SERVICIOS EN LA HABITACIÓN</p>
+              <div className='grid grid-cols-2 gap-4 uppercase text-xs font-work tablet:grid-cols-8 tablet:text-center'>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={pet} alt="Icono Mascota" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Pet Friendly</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={wifi} alt="Icono Wifi" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Wi-Fi</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={chromeCast} alt="Icono Chromecast" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Transmisión</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={tv} alt="Icono TV" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Smart TV 32"</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={fan} alt="Icono Ventilador" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Ventilador</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={netflix} alt="Icono Netflix" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Netflix</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={prime} alt="Icono Prime Video" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Prime Video</div>
+                <div className='flex justify-start items-center mb-4 mx-3 tablet:flex-col tablet:justify-between'><img src={youtube} alt="Icono Youtube" className='mr-3 w-7 tablet:mb-4 tablet:mr-0'/>Youtube</div>
+              </div>
+              <span className='w-[60%] h-[1px] bg-black mt-3'></span>
+              <p className='font-work text-sm text-center my-5 tracking-wider leading-6 max-w-xl desktop:max-w-3xl'> 
+                En Be' Tania, te invitamos a sumergirte en una experiencia única con nuestras 16 habitaciones cuidadosamente seleccionadas y de dimensiones generosas. Nuestra variedad de habitaciones incluye 2 familiares, 3 dobles y 11 matrimoniales, lo que significa que tenemos la opción perfecta para cualquier tipo de viajero.
+          
+                Nuestro alojamiento es verdaderamente especial, ya que es pet friendly, y ofrecemos una amplia gama de comodidades que superan tus expectativas. Cada habitación cuenta con Smart TV de 32" o 42", para que disfrutes de tus programas y películas favoritas en Netflix, Prime Video y YouTube en la comodidad de tu habitación.
+            
+                Nuestras habitaciones están equipadas con características tecnológicas avanzadas y comodidades de estilo residencial, lo que te brinda la sensación de estar en tu hogar lejos de casa. ¡Te estamos esperando para hacer de tu estancia una experiencia memorable en Be' Tania!
+              </p>
+
+              
+            </article>
+
+            <article className='w-[95%] pb-10 px-4 mx-auto min-w-[290px] flex flex-col
+                                    tablet:flex-row tablet:px-0 tablet:mx-1 tablet:items-center tablet:justify-between
+                                    desktop:max-w-[1100px] desktop:px-0
+                '>
+
+                        <div className="mx-auto relative tablet:w-[45%] tablet:mx-0 desktop:w-[43%]">            
+                          <Carousel
+                              showStatus={false}
+                              showArrows={true}
+                              autoPlay={false}
+                              showThumbs={false}
+                              swipeable={false}
+                              infiniteLoop={true}
+                          >
+                              <img src={lobbySection} alt="Imagen de Cama" className="w-full h-full relative" />
+                              <img src={toiletRoom} alt="Imagen del baño" className="w-full h-full relative" />
+                          </Carousel>     
+                            
+                          <div className="absolute top-[-14px] right-[-14px] w-full h-full border border-gray-700 -z-10"/>
+
+                        </div>
+
+                        <div className='mt-10 px-4 flex flex-col justify-center items-center tablet:w-[50%]'>
+
+                            <div className='flex justify-center items-center'>
+                              <div className='flex m-3 font-work'><img src={people} alt="Icono de persona" className='w-3 mr-2' />2 Personas</div>
+                              <div className='bg-gray-800 h-6 w-[1px]'/>
+                              <div className='flex m-3 font-work'><img src={area} alt="Icono de persona" className='w-3 mr-2' />10 m <sub>2</sub></div>
+                            </div>
+
+                            <div className='flex flex-col justify-center items-center'>
+                              <h1 className='text-xl uppercase text-center font-bold my-5 desktop:text-3xl tracking-wider'>Habitacion Matrimonial</h1>
+                              <p className='font-work tracking-wider text-center text-sm leading-6 mb-5'>
+                                Nuestra habitación matrimonial es un verdadero refugio de confort y elegancia. Cada una de estas habitaciones ha sido diseñada pensando en tu comodidad y tranquilidad durante tu estancia en Be' Tania.
+                                Destacada por su amplia cama de matrimonio, que ofrece espacio más que suficiente para dos personas, garantizando una noche de descanso reparador. 
+                              </p>
+                            </div>
+
+                            <button class="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
+                              Reserva ahora
+                            </button>
+                        </div>
+
+                      
+            </article>
+
+            <article className='w-[95%] pb-10 px-4 mx-auto min-w-[290px] flex flex-col
+                                    tablet:flex-row-reverse tablet:px-0 tablet:mx-1 tablet:items-center tablet:justify-between
+                                    desktop:max-w-[1100px] desktop:px-0
+                '>
+
+                        <div className="mx-auto relative tablet:w-[45%] tablet:mx-0 desktop:w-[43%]">            
+                          <Carousel
+                              showStatus={false}
+                              showArrows={true}
+                              autoPlay={false}
+                              showThumbs={false}
+                              swipeable={false}
+                              infiniteLoop={true}
+                          >
+                              <img src={lobbySection} alt="Imagen de Cama" className="w-full h-full relative" />
+                              <img src={toiletRoom} alt="Imagen del baño" className="w-full h-full relative" />
+                          </Carousel>     
+                            
+                          <div className="absolute top-[14px] right-[14px] w-full h-full border border-gray-700 -z-10"/>
+
+                        </div>
+
+                        <div className='mt-10 px-4 flex flex-col justify-center items-center tablet:w-[50%]'>
+
+                            <div className='flex justify-center items-center'>
+                              <div className='flex m-3 font-work'><img src={people} alt="Icono de persona" className='w-3 mr-2' />4 Personas</div>
+                              <div className='bg-gray-800 h-6 w-[1px]'/>
+                              <div className='flex m-3 font-work'><img src={area} alt="Icono de persona" className='w-3 mr-2' />15 m <sub>2</sub></div>
+                            </div>
+
+                            <div className='flex flex-col justify-center items-center'>
+                              <h1 className='text-xl uppercase text-center font-bold my-5 desktop:text-3xl tracking-wider'>Habitacion Doble</h1>
+                              <p className='font-work tracking-wider text-center text-sm leading-6 mb-5'>Nuestra habitación doble es un espacio acogedor y versátil diseñado para proporcionar comodidad y flexibilidad a nuestros huéspedes. Esta habitación está equipada con dos cómodas camas individuales, lo que la convierte en una elección ideal para parejas que prefieren dormir por separado o para amigos que viajan juntos.</p>
+                            </div>
+
+                            <button class="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
+                              Reserva ahora
+                            </button>
+                        </div>
+
+                      
+            </article>
+
+            <article className='w-[95%] pb-10 px-4 mx-auto min-w-[290px] flex flex-col
+                                    tablet:flex-row tablet:px-0 tablet:mx-1 tablet:items-center tablet:justify-between
+                                    desktop:max-w-[1100px] desktop:px-0
+                '>
+
+                        <div className="mx-auto relative tablet:w-[45%] tablet:mx-0 desktop:w-[43%]">            
+                          <Carousel
+                              showStatus={false}
+                              showArrows={true}
+                              autoPlay={false}
+                              showThumbs={false}
+                              swipeable={false}
+                              infiniteLoop={true}
+                          >
+                              <img src={lobbySection} alt="Imagen de Cama" className="w-full h-full relative" />
+                              <img src={toiletRoom} alt="Imagen del baño" className="w-full h-full relative" />
+                          </Carousel>     
+                            
+                          <div className="absolute top-[-14px] right-[-14px] w-full h-full border border-gray-700 -z-10"/>
+
+                        </div>
+
+                        <div className='mt-10 px-4 flex flex-col justify-center items-center tablet:w-[50%]'>
+
+                            <div className='flex justify-center items-center'>
+                              <div className='flex m-3 font-work'><img src={people} alt="Icono de persona" className='w-3 mr-2' />5 Personas</div>
+                              <div className='bg-gray-800 h-6 w-[1px]'/>
+                              <div className='flex m-3 font-work'><img src={area} alt="Icono de persona" className='w-3 mr-2' />20 m <sub>2</sub></div>
+                            </div>
+
+                            <div className='flex flex-col justify-center items-center'>
+                              <h1 className='text-xl uppercase text-center font-bold my-5 desktop:text-3xl tracking-wider'>Habitacion Familiar</h1>
+                              <p className='font-work tracking-wider text-center text-xs leading-6 mb-5 desktop:text-base'>
+                              Nuestra habitación familiar es el espacio perfecto para quienes viajan en grupo o en familia y desean disfrutar de una estancia cómoda y unida. Esta amplia habitación ha sido diseñada pensando en la comodidad y la conveniencia de nuestros huéspedes, brindando un ambiente acogedor y relajante para todos.
+
+                              En la habitación familiar, encontrarás una combinación de camas que se adapta a las necesidades de tu grupo, que pueden incluir camas individuales y camarotes. La versatilidad en la disposición de las camas garantiza que todos los miembros de la familia o grupo de viaje tengan un espacio cómodo para descansar.
+                              </p>
+                            </div>
+
+                            <button class="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
+                              Reserva ahora
+                            </button>
+                        </div>
+
+                      
+            </article>
+
+            
+           
+
+          </section>    
         
 
 

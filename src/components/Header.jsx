@@ -10,18 +10,19 @@ import { usePantalla } from './PantallaContext';
 
 const Header = () => {
 
-    const { pantallaTablet, pantallaDesktop } = usePantalla();
+    const { pantallaTablet } = usePantalla();
     const [scrollDown, setScrollDown] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    
     
     const handleScroll = () => {
-        if (window.scrollY > 10) { 
-            setScrollDown(true);
+        if (window.scrollY > 10) {
+          setScrollDown(true);
         } else {
-            setScrollDown(false);
+          setScrollDown(false);
         }
-    }
+    };
+
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -98,7 +99,7 @@ const Header = () => {
                         
                     </div>
                     
-                    <nav className={`w-screen h-screen absolute top-0 left-0 z-50 text-white bg-[#181818] ${!isMenuOpen && 'hidden'}`}>
+                    <nav className={`w-screen h-screen absolute top-0 left-0 z-50 font-work text-white bg-[#181818] ${!isMenuOpen && 'hidden'}`}>
                         <div className='flex flex-col w-full h-full mx-auto max-w-screen-desktop pl-5 tablet:pl-5 desktop:pl-0'>
 
                             <div className='flex justify-between items-center py-6'>
