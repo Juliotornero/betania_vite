@@ -180,7 +180,7 @@ const Rooms = () => {
 
                             <div className='flex flex-col justify-center items-center'>
                               <h1 className='text-xl uppercase text-center font-bold my-5 desktop:text-3xl tracking-wider'>Habitacion Familiar</h1>
-                              <p className='font-work tracking-wider text-center text-xs leading-6 mb-5 desktop:text-base'>
+                              <p className='font-work tracking-wider text-center text-sm leading-6 mb-5'>
                               Nuestra habitación familiar es el espacio perfecto para quienes viajan en grupo o en familia y desean disfrutar de una estancia cómoda y unida. Esta amplia habitación ha sido diseñada pensando en la comodidad y la conveniencia de nuestros huéspedes, brindando un ambiente acogedor y relajante para todos.
 
                               En la habitación familiar, encontrarás una combinación de camas que se adapta a las necesidades de tu grupo, que pueden incluir camas individuales y camarotes. La versatilidad en la disposición de las camas garantiza que todos los miembros de la familia o grupo de viaje tengan un espacio cómodo para descansar.
