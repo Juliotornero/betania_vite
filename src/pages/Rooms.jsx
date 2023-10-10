@@ -97,7 +97,7 @@ const Rooms = () => {
                               </p>
                             </div>
 
-                            <button class="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
+                            <button className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
                               Reserva ahora
                             </button>
                         </div>
@@ -140,7 +140,7 @@ const Rooms = () => {
                               <p className='font-work tracking-wider text-center text-sm leading-6 mb-5'>Nuestra habitación doble es un espacio acogedor y versátil diseñado para proporcionar comodidad y flexibilidad a nuestros huéspedes. Esta habitación está equipada con dos cómodas camas individuales, lo que la convierte en una elección ideal para parejas que prefieren dormir por separado o para amigos que viajan juntos.</p>
                             </div>
 
-                            <button class="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
+                            <button className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
                               Reserva ahora
                             </button>
                         </div>
@@ -187,7 +187,7 @@ const Rooms = () => {
                               </p>
                             </div>
 
-                            <button class="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
+                            <button className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
                               Reserva ahora
                             </button>
                         </div>
