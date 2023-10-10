@@ -14,7 +14,6 @@ const Header = () => {
     const [scrollDown, setScrollDown] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
-    
     const handleScroll = () => {
         if (window.scrollY > 10) {
           setScrollDown(true);
@@ -23,7 +22,6 @@ const Header = () => {
         }
     };
 
-
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
     
@@ -31,8 +29,6 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
       }, []);
-
-
       
     const openMenu = () => {
         setIsMenuOpen(true);
@@ -44,7 +40,6 @@ const Header = () => {
         document.body.classList.remove('overflow-hidden');
       };
       
-    
     return (
       
 
