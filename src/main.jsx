@@ -15,7 +15,7 @@ import Faq from './pages/Faq'
 import Contact from './pages/Contact'
 import ClaimsBook from './pages/ClaimsBook'
 import Legal from './pages/Legal'
-import About from './pages/about';
+import About from './pages/About';
 
 
 const router = createBrowserRouter([
