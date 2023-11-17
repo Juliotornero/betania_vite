@@ -108,7 +108,6 @@ const Header = () => {
                                 <Link to="/servicios" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>SERVICIOS</Link>
                                 <Link to="/pisco" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>ATRACCIONES EN PISCO</Link>
                                 <Link to="/preguntas" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>PREGUNTAS PRECUENTES</Link>
-                                <Link to="/contacto" onClick={closeMenu} className='my-3 hover:text-[#89745C]'>CONTACTO</Link>
                                 <button className='uppercase mt-5 py-2 w-[190px] text-sm font-work rounded border-2 bg-transparent hover:bg-white hover:text-black tablet:text-2xl desktop:text-2xl desktop:w-[200px]'>Reserva</button>
                             </div>
                         </div>

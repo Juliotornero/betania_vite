@@ -5,11 +5,13 @@ import habitacion from '../assets/habitacion.jpg'
 import servicios from '../assets/servicios.jpg'
 import ofertas from '../assets/ofertas.jpg'
 import pisco from '../assets/pisco.png'
+import { Link } from 'react-router-dom'
+
 const SectionDiscover = ({pantallaTablet}) => {
   
   return (
     <>
-    <section className="flex flex-col py-14 mx-auto">
+    <section className="flex flex-col py-28 mx-auto">
 
         <header className='flex flex-col justify-center items-center'>
             <h1 className='mb-5 font-work uppercase text-sm font-bold'>Descubre</h1>  
@@ -28,10 +30,10 @@ const SectionDiscover = ({pantallaTablet}) => {
                           alt="Imagen de Cuarto"
                           className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                         />
-                        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                        <Link to="/habitaciones" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                           <p className="text-white text-3xl font-bold tracking-wide">Habitaciones</p>
                           <DiscoverButton/>
-                        </div>
+                        </Link>
                 </article>
 
               
@@ -43,10 +45,10 @@ const SectionDiscover = ({pantallaTablet}) => {
                       alt="Imagen de Cuarto"
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                    <Link to="/servicios" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                       <p className="text-white text-3xl font-bold tracking-wide">Servicios</p>
                       <DiscoverButton/>
-                    </div>
+                    </Link>
                   
                 
                 </article>
@@ -60,10 +62,10 @@ const SectionDiscover = ({pantallaTablet}) => {
                       alt="Imagen de Cuarto"
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                    <Link to="ofertas" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                       <p className="text-white text-3xl font-bold tracking-wide">Ofertas</p>
                       <DiscoverButton/>
-                    </div>
+                    </Link>
                   
                 
                 </article>
@@ -76,10 +78,10 @@ const SectionDiscover = ({pantallaTablet}) => {
                       alt="Imagen de Cuarto"
                       className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                    <Link to="Pisco" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                       <p className="text-white text-3xl font-bold tracking-wide text-center">Conoce Pisco</p>
                       <DiscoverButton/>
-                    </div>
+                    </Link>
                   
                 
                 </article>
@@ -101,10 +103,10 @@ const SectionDiscover = ({pantallaTablet}) => {
                             alt="Imagen de Cuarto"
                             className="transition-transform transform scale-100 group-hover:scale-105"
                           />
-                          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                          <Link to="/habitaciones" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                                 <p className="text-white text-3xl font-bold tracking-wide">Habitaciones</p>
                                 <DiscoverButton/>
-                          </div>
+                          </Link>
                       </article>
 
                     {/* Slide 2 */}
@@ -114,10 +116,10 @@ const SectionDiscover = ({pantallaTablet}) => {
                             alt="Imagen de Servicios"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
-                          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                          <Link to="/servicios" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                             <p className="text-white text-3xl font-bold tracking-wide">Servicios</p>
                             <DiscoverButton/>
-                          </div>
+                          </Link>
                       </article>
                     
                     {/* Slide 3 */}
@@ -127,24 +129,24 @@ const SectionDiscover = ({pantallaTablet}) => {
                             alt="Imagen de Ofertas"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
-                          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                          <Link to="/ofertas" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                           <p className="text-white text-3xl font-bold tracking-wide">Ofertas</p>
                           <DiscoverButton/>
-                          </div>
+                          </Link>
                       </article>
 
-                      {/* Slide 3 */}
-                      <article className="w-full h-auto flex group overflow-hidden">
+                    {/* Slide 4 */}
+                    <article className="w-full h-auto flex group overflow-hidden">
                           <img
                             src={pisco}
                             alt="Imagen de Pisco"
                             className="w-full h-full transition-transform transform scale-100 group-hover:scale-105"
                           />
-                          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
+                          <Link to="/ofertas" className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-evenly">
                             <p className="text-white text-3xl font-bold tracking-wide">Descubre Pisco</p>
                             <DiscoverButton/>
-                          </div>
-                      </article>
+                          </Link>
+                    </article>
 
               </Carousel>
             </div>

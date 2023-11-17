@@ -46,7 +46,7 @@ const Map = () => {
     <>
         <section className="relative">
           <header className='flex flex-col justify-center items-center'>
-              <h1 className='mb-5 font-work uppercase text-sm font-bold'>encuéntranos</h1>
+              <h1 className='mb-5 font-work uppercase text-sm font-bold desktop:mb-14'>encuéntranos</h1>
           </header>
 
           <div ref={mapContainer} className="map-container"/>

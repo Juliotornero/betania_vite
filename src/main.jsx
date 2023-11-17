@@ -12,11 +12,11 @@ import Services from './pages/Services'
 import Offers from './pages/Offers'
 import DiscoverPisco from './pages/DiscoverPisco'
 import Faq from './pages/Faq'
-import Contact from './pages/Contact'
 import ClaimsBook from './pages/ClaimsBook'
 import Legal from './pages/Legal'
 import About from './pages/About';
-
+import Cookies from './pages/Cookies';
+import Rules from './pages/Rules';
 
 const router = createBrowserRouter([
   {
@@ -48,10 +48,6 @@ const router = createBrowserRouter([
         element: <Faq />,
       },
       {
-        path: '/contacto',
-        element: <Contact />,
-      },
-      {
         path: '/reclamos',
         element: <ClaimsBook />,
       },
@@ -62,6 +58,14 @@ const router = createBrowserRouter([
       {
         path: '/sobrenosotros',
         element: <About/>,
+      },
+      {
+        path: '/cookies',
+        element: <Cookies/>,
+      },
+      {
+        path: '/reglamento',
+        element: <Rules/>,
       },
     ],
   },

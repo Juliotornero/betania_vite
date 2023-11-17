@@ -5,6 +5,8 @@ import location from '../assets/location.svg'
 import call from '../assets/phone.svg'
 import email from '../assets/email.svg'
 import whatsapp from '../assets/whatsapp_logo.svg'
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
   
   return (
@@ -30,9 +32,9 @@ const Footer = () => {
                     <p className="font-semibold text-white">Contáctenos</p>
 
                     <div className="flex flex-col items-start mt-5 space-y-2">
-                        <a href="#" className="flex text-gray-300 hover:underline hover:text-blue-500"><img src={location} alt="Logo Ubicacion" className='mr-2'/> Calle Arequipa #192</a>
-                        <a href="#" className="flex text-gray-300 hover:underline hover:text-blue-500"><img src={call} alt="Logo Telefono" className='mr-2'/>+51 942916064</a>
-                        <a href="#" className="flex text-gray-300 hover:underline hover:text-blue-500"><img src={email} alt="Logo Email" className='mr-2'/>betaniahospedaje@gmail.com</a>
+                        <span className="flex text-gray-300"><img src={location} alt="Logo Ubicacion" className='mr-2'/>Calle Arequipa #192 Pisco - Ica</span>
+                        <span className="flex text-gray-300"><img src={call} alt="Logo Telefono" className='mr-2'/>+51 942916064</span>
+                        <span className="flex text-gray-300"><img src={email} alt="Logo Email" className='mr-2'/>betaniahospedaje@gmail.com</span>
                     </div>
                 </div>
 
@@ -40,11 +42,11 @@ const Footer = () => {
                     <p className="font-semibold text-white">Soporte</p>
 
                     <div className="flex flex-col items-start mt-5 space-y-2">
-                            <a href="#" className="text-gray-300 hover:underline hover:text-blue-500">Preguntas Frecuentes</a>
-                            <a href="#" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Privacidad</a>
-                            <a href="#" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Cookies</a>
-                            <a href="#" className="text-gray-300 hover:underline hover:text-blue-500">Reglamento Interno</a>
-                            <a href="#" className="text-gray-300 hover:underline hover:text-blue-500">Libro de Reclamaciones</a>
+                            <Link to="/preguntas" className="text-gray-300 hover:underline hover:text-blue-500">Preguntas Frecuentes</Link>
+                            <Link to="/legal" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Privacidad</Link>
+                            <Link to="/cookies" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Cookies</Link>
+                            <Link to="/reglamento" className="text-gray-300 hover:underline hover:text-blue-500">Reglamento Interno</Link>
+                            <Link to="/reclamos" className="text-gray-300 hover:underline hover:text-blue-500">Libro de Reclamaciones</Link>
 
                     </div>
                 </div>
@@ -54,15 +56,15 @@ const Footer = () => {
             
             <div className="flex items-center justify-between">
                 {/* Logo Betania */}
-                <a href="#">
+                <div>
                     <img className="w-[150px]" src={logoNameWhite} alt="Logo Hospedaje Be' Tania"/>
-                </a>
+                </div>
                 
                 {/* Social Media */}
-                <div className="flex -mx-2">   
-                    <a href="/" className="mx-2"><img src={facebook} alt="Logo Facebook"/></a>
-                    <a href="/" className="mx-2"><img src={instagram} alt="Logo Instagram"/></a>
-                    <a href="/" className="mx-2"><img src={whatsapp} alt="Logo Whastapp"/></a> 
+                <div className="flex -mx-2 items-center">   
+                    <Link to="https://www.facebook.com/profile.php?id=100038757669622" target="_blank" className="mx-2"><img src={facebook} alt="Logo Facebook" className='w-6'/></Link>
+                    <Link to="https://www.instagram.com/hospedaje_betania/" target="_blank" className="mx-2"><img src={instagram} alt="Logo Instagram" className='w-6'/></Link>
+                    <Link to="https://api.whatsapp.com/send?phone=51942916064&text=%C2%A1Hola!%20Quisiera%20informaci%C3%B3n%20%F0%9F%98%8A" target="_blank" className="mx-2"><img src={whatsapp} alt="Logo Whastapp" className='w-6'/></Link> 
                 </div>
             </div>
             
