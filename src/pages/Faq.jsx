@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Faq = () => {
   useEffect(() => {
@@ -43,10 +44,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Puedes realizar tus reservas escribiendonos directamente a nuestro Whatsapp dando click<Link className='font-bold' to="https://api.whatsapp.com/send?phone=51942916064&text=%C2%A1Hola!%20Quisiera%20informaci%C3%B3n%20%F0%9F%98%8A" target="_blank"> aqui</Link> 
             </p>
           </details>
 
@@ -76,10 +74,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Aceptamos todos los metodos de pagos como Efectivo, Transferencias, Tarjetas Visa o Mastercard, Yape, Plin y mas !
             </p>
           </details>
 
@@ -109,10 +104,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Si realizas tu cancelacion de la reserva con un plazo de 24 horas se te reembolsara el 100% de tu pago de lo contrario el pago no sera reembolsable.
             </p>
           </details>
           
@@ -143,10 +135,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Contamos con variedad de habitaciones, de las cuales 11 son matrimoniales, 3 dobles y 2 familiares.
             </p>
           </details>
 
@@ -175,10 +164,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Para nuestras habitaciones Matrimoniales el maximo permitido es 2 adultos y 1 niño, para nuestras habitaciones dobles el maximo permitido son 4 adultos y para nuestras familiares el maximo permitido es 5 personas.
             </p>
           </details>
 
@@ -207,10 +193,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Por el momento no contamos con cunas pero si es posible solicitar una cama extra.
             </p>
           </details>
 
@@ -239,46 +222,13 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Por el momento no contamos con habitaciones adaptadas para personas con movilidad reducida.
             </p>
           </details>
 
           <p className='uppercase text-center text-xl text-bold my-10'>Servicios y Comodidades</p>
           
-          <details
-            className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
-          >
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-base font-medium text-gray-900">
-              ¿Qué servicios e instalaciones ofrece el hotel?
-              </h2>
-
-              <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </summary>
-
-            <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
-            </p>
-          </details>
+          
 
           <details
             className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
@@ -305,10 +255,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Si. Somos un hospedaje Pet Friendly !
             </p>
           </details>
 
@@ -340,10 +287,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Lo puedes hacer a partir de las 3:00 PM
             </p>
           </details>
 
@@ -372,44 +316,11 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Si, el check-in se puede realizar mas temprano pero aplica un recargo extra, de igual manera el check-out tardío.
             </p>
           </details>
 
-          <details
-            className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
-          >
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-base font-medium text-gray-900">
-              ¿Cuál es el proceso de check-in y check-out?
-              </h2>
 
-              <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </summary>
-
-            <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
-            </p>
-          </details>
 
 
           <p className='uppercase text-center text-xl text-bold my-10'>Políticas del Hospedaje</p>
@@ -439,44 +350,11 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              No esta permitido fumar en las habitaciones, en caso de hacer caso omiso se aplicara un recargo del 100% al valor pagado por la estancia.
             </p>
           </details>
 
-          <details
-            className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
-          >
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-base font-medium text-gray-900">
-              ¿Se requiere una tarjeta de crédito al hacer el check-in?
-              </h2>
 
-              <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </summary>
-
-            <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
-            </p>
-          </details>
           
           <details
             className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
@@ -503,10 +381,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Contamos con personal las 24 horas del dia y tenemos camaras de seguridad en todos los pisos y areas del hospedaje para brindad seguridad y tranquilidad a nuestros huespedes.
             </p>
           </details>
 
@@ -535,80 +410,11 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Si, la edad obligatoria para el registro es de 18 años, para menores de edad, deben ser registrados junto a sus padres mostrando su documento de edad correspondiente.
             </p>
           </details>
 
-          <p className='uppercase text-center text-xl text-bold my-10'>Actividades y Entretenimiento</p>
-          
-          <details
-            className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
-          >
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-base font-medium text-gray-900">
-              ¿Qué actividades o atracciones turísticas están cerca del hotel?
-              </h2>
-
-              <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </summary>
-
-            <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
-            </p>
-          </details>
-
-          <details
-            className="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden my-4"
-          >
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-base font-medium text-gray-900">
-              ¿Ofrecen excursiones o tours organizados?
-              </h2>
-
-              <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </summary>
-
-            <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
-            </p>
-          </details>
-
-          
+                   
           <p className='uppercase text-center text-xl text-bold my-10'>Política de Mascotas</p>
           
           <details
@@ -636,10 +442,8 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+            Los dueños de mascotas son responsables de la conducta de sus mascotas. Esto puede incluir mantener a la mascota con correa en las áreas comunes, evitar que hagan ruido excesivo y limpiar cualquier desorden que puedan causar.
+            Por el momento solo se aceptan perros y gatos y solo se permite 1 mascota por habitacion.
             </p>
           </details>
 
@@ -668,10 +472,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Actualmente no aplicamos cargos por traer una mascota a nuestro hospedaje.
             </p>
           </details>
 
@@ -702,10 +503,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+             El numero es 942916064
             </p>
           </details>
 
@@ -714,7 +512,7 @@ const Faq = () => {
           >
             <summary className="flex cursor-pointer items-center justify-between gap-1.5">
               <h2 className="text-base font-medium text-gray-900">
-              ¿Cómo puedo hacer una solicitud especial o dejar comentarios?
+              ¿Cómo puedo hacer una solicitud especial?
               </h2>
 
               <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -734,10 +532,7 @@ const Faq = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-              molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-              voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-              earum similique!
+              Puedes hacerlo con nuestro recepcionista de turno.
             </p>
           </details>
 

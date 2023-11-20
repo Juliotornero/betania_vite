@@ -43,10 +43,10 @@ const Footer = () => {
 
                     <div className="flex flex-col items-start mt-5 space-y-2">
                             <Link to="/preguntas" className="text-gray-300 hover:underline hover:text-blue-500">Preguntas Frecuentes</Link>
-                            <Link to="/legal" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Privacidad</Link>
+                            {/* <Link to="/legal" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Privacidad</Link>
                             <Link to="/cookies" className="text-gray-300 hover:underline hover:text-blue-500">Politicas de Cookies</Link>
                             <Link to="/reglamento" className="text-gray-300 hover:underline hover:text-blue-500">Reglamento Interno</Link>
-                            <Link to="/reclamos" className="text-gray-300 hover:underline hover:text-blue-500">Libro de Reclamaciones</Link>
+                            <Link to="/reclamos" className="text-gray-300 hover:underline hover:text-blue-500">Libro de Reclamaciones</Link> */}
 
                     </div>
                 </div>
