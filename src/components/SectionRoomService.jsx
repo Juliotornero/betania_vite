@@ -65,9 +65,9 @@ const SectionRoomService = ({pantallaDesktop}) => {
                     Esperamos que disfrute de su tiempo en Pisco y que encuentre en el Hospedaje Be' Tania un lugar donde pueda descansar y sumergirse en la rica historia y cultura que esta ciudad tiene para ofrecer. No dude en ponerse en contacto con nosotros si necesita alguna recomendación o asistencia durante su estancia. <br /><br /><span className='text-xl'>¡Bienvenido a Pisco y a nuestro hogar!</span>
                     </p>
 
-                    <Link to="/sobrenosotros" className='p-3 w-3/4 max-w-[180px] text-[10px] tracking-wider border uppercase font-work border-white hover:bg-white hover:text-[#B7A18B] rounded desktop:text-xs desktop:py-4'>
+                    {/* <Link to="/sobrenosotros" className='p-3 w-3/4 max-w-[180px] text-[10px] tracking-wider border uppercase font-work border-white hover:bg-white hover:text-[#B7A18B] rounded desktop:text-xs desktop:py-4'>
                         Sobre nosotros
-                    </Link>
+                    </Link> */}
 
                          
                     </div>

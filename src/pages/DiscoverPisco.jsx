@@ -8,7 +8,6 @@ import plaza from '../assets/discoverPisco/plazadearmas.png'
 import reserva from '../assets/discoverPisco/reserva.jpg'
 import tambocolorado from '../assets/discoverPisco/tamboColorado.jpg'
 import yakupark from '../assets/discoverPisco/yakupark.png'
-import { Link } from 'react-router-dom';
 
 const DiscoverPisco = () => {
   useEffect(() => {
@@ -17,36 +16,48 @@ const DiscoverPisco = () => {
   }, []);
   return (
     <>
-        <div className="w-full h-screen piscoDesktop">
-          <div className='absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-full'>
-              <h1 className='text-4xl text-white tablet:text-5xl desktop:text-7xl'>Descubre Pisco</h1>
-          </div> 
+      <div className="w-full h-screen piscoDesktop">
+        <div className='absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-full'>
+          <h1 className='text-4xl text-white tablet:text-5xl desktop:text-7xl'>Descubre Pisco</h1>
         </div>
+      </div>
 
 
-        <section className='font-work flex flex-wrap p-4 justify-center items-center'>
+      <section className='font-work flex flex-wrap p-4 justify-center items-center'>
 
+        <article className="relative rounded overflow-hidden shadow-lg w-[300px] m-2 flex flex-col justify-center items-center hover:bg-gray-500">
+          <img className="w-full h-48 object-cover hover:opacity-50" src={candelabro} alt="Sunset in the mountains" />
+          <div className="font-bold text-xl mb-2 text-center absolute text-white z-10">El Candelabro</div>
+        </article>
 
-          <article class="rounded overflow-hidden shadow-lg w-[300px] h-[560px] tablet:h-[520px] m-2 pb-4 flex flex-col justify-between items-center">
-            <img class="w-full h-48 object-cover" src={islas} alt="Sunset in the mountains"/>
-            <div class="px-6 py-3">
-              <div class="font-bold text-xl mb-2 text-center">Las Islas Ballestas</div>
-              <p class="text-gray-500 text-sm text-center">
-              Las Islas Ballestas, también conocidas como "el pequeño Galápagos" debido a su abundante vida silvestre, son un grupo de pequeñas islas e islotes ubicados en la costa del océano Pacífico, cerca de la ciudad de Paracas, en la región de Ica, Perú. Estas islas son famosas por su belleza natural y su rica biodiversidad marina y aviar.              
-              </p>
-            </div> 
-            <Link to="" className='bg-gray-800 px-3 py-2 rounded text-white text-xs uppercase'>Planear Visita</Link>
-          </article> 
+        <article class="relative rounded overflow-hidden shadow-lg w-[300px] m-2 flex flex-col justify-center items-center hover:bg-gray-500">
+          <img class="w-full h-48 object-cover hover:opacity-50" src={islas} alt="Sunset in the mountains" />
+          <div class="font-bold text-xl mb-2 text-center absolute text-white">Las Islas Ballestas</div>
+        </article>
 
+        <article class="relative rounded overflow-hidden shadow-lg w-[300px] m-2 flex flex-col justify-center items-center hover:bg-gray-500">
+          <img class="w-full h-48 object-cover hover:opacity-50" src={parapente} alt="Sunset in the mountains" />
+          <div class="font-bold text-xl mb-2 text-center absolute text-white">Parapente</div>
+        </article>
 
-         
+        <article class="relative rounded overflow-hidden shadow-lg w-[300px] m-2 flex flex-col justify-center items-center hover:bg-gray-500">
+          <img class="w-full h-48 object-cover hover:opacity-50" src={plaza} alt="Sunset in the mountains" />
+          <div class="font-bold text-xl mb-2 text-center absolute text-white">Plaza de Armas</div>
+        </article>
 
-        
-          
+        <article class="relative rounded overflow-hidden shadow-lg w-[300px] m-2 flex flex-col justify-center items-center hover:bg-gray-500">
+          <img class="w-full h-48 object-cover hover:opacity-50" src={yakupark} alt="Sunset in the mountains" />
+          <div class="font-bold text-xl mb-2 text-center absolute text-white">Yakupark</div>
+        </article>
 
-          
-        
-        </section>
+        <article class="relative rounded overflow-hidden shadow-lg w-[300px] m-2 flex flex-col justify-center items-center hover:bg-gray-500">
+          <img class="w-full h-48 object-cover hover:opacity-50" src={tambocolorado} alt="Sunset in the mountains" />
+          <div class="font-bold text-xl mb-2 text-center absolute text-white">Tambo Colorado</div>
+        </article>
+
+      </section>
+
+      <p className='text-center uppercase m-3 font-bold font-work'>* Realiza la consulta con nuestro recepcionista para recibir un folleto o informacion *</p>
     </>
   )
 }
