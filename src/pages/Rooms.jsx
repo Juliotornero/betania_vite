@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { usePantalla } from '../components/PantallaContext';
+
 import lobbySection from '../assets/lobby.jpg'
 import toiletRoom from '../assets/toilet.jpg'
 import people from '../assets/roomPeople.svg'
@@ -14,10 +15,21 @@ import tv from '../assets/IconsRoom/tvIcon.svg'
 import wifi from '../assets/IconsRoom/wifiIcon.svg'
 import youtube from '../assets/IconsRoom/youtubeIcon.svg'
 
+
+import toilet1 from '../assets/roomsImgs/toilet1.jpg'
+import toilet2 from '../assets/roomsImgs/toilet2.jpg'
+import toilet3 from '../assets/roomsImgs/toilet3.jpg'
+
+import room1 from '../assets/roomsImgs/room1.jpg'
+import room2 from '../assets/roomsImgs/room2.jpg'
+import room3 from '../assets/roomsImgs/room3.jpg'
+
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Link } from 'react-router-dom';
 
 const Rooms = () => {
+  
   const { pantallaDesktop } = usePantalla();  
   
   useEffect(() => {
@@ -74,8 +86,8 @@ const Rooms = () => {
                               swipeable={false}
                               infiniteLoop={true}
                           >
-                              <img src={lobbySection} alt="Imagen de Cama" className="w-full h-full relative" />
-                              <img src={toiletRoom} alt="Imagen del baño" className="w-full h-full relative" />
+                              <img src={room1} alt="Imagen de Cama" className="w-full h-full relative" />
+                              <img src={toilet1} alt="Imagen del baño" className="w-full h-full relative" />
                           </Carousel>     
                             
                           <div className="absolute top-[-14px] right-[-14px] w-full h-full border border-gray-700 -z-10"/>
@@ -98,9 +110,8 @@ const Rooms = () => {
                               </p>
                             </div>
 
-                            <button className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
-                              Reserva ahora
-                            </button>
+                            <Link to="https://api.whatsapp.com/send?phone=51942916064&text=%C2%A1Hola!%20Quisiera%20informaci%C3%B3n%20%F0%9F%98%8A" target="_blank" className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded"> Reserva </Link>
+                          
                         </div>
 
                       
@@ -120,8 +131,8 @@ const Rooms = () => {
                               swipeable={false}
                               infiniteLoop={true}
                           >
-                              <img src={lobbySection} alt="Imagen de Cama" className="w-full h-full relative" />
-                              <img src={toiletRoom} alt="Imagen del baño" className="w-full h-full relative" />
+                              <img src={room2} alt="Imagen de Cama" className="w-full h-full relative" />
+                              <img src={toilet2} alt="Imagen del baño" className="w-full h-full relative" />
                           </Carousel>     
                             
                           <div className="absolute top-[14px] right-[14px] w-full h-full border border-gray-700 -z-10"/>
@@ -141,9 +152,7 @@ const Rooms = () => {
                               <p className='font-work tracking-wider text-center text-sm leading-6 mb-5'>Nuestra habitación doble es un espacio acogedor y versátil diseñado para proporcionar comodidad y flexibilidad a nuestros huéspedes. Esta habitación está equipada con dos cómodas camas individuales, lo que la convierte en una elección ideal para parejas que prefieren dormir por separado o para amigos que viajan juntos.</p>
                             </div>
 
-                            <button className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
-                              Reserva ahora
-                            </button>
+                            <Link to="https://api.whatsapp.com/send?phone=51942916064&text=%C2%A1Hola!%20Quisiera%20informaci%C3%B3n%20%F0%9F%98%8A" target="_blank" className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded"> Reserva </Link>
                         </div>
 
                       
@@ -163,8 +172,8 @@ const Rooms = () => {
                               swipeable={false}
                               infiniteLoop={true}
                           >
-                              <img src={lobbySection} alt="Imagen de Cama" className="w-full h-full relative" />
-                              <img src={toiletRoom} alt="Imagen del baño" className="w-full h-full relative" />
+                              <img src={room3} alt="Imagen de Cama" className="w-full h-full relative" />
+                              <img src={toilet3} alt="Imagen del baño" className="w-full h-full relative" />
                           </Carousel>     
                             
                           <div className="absolute top-[-14px] right-[-14px] w-full h-full border border-gray-700 -z-10"/>
@@ -188,9 +197,7 @@ const Rooms = () => {
                               </p>
                             </div>
 
-                            <button className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded">
-                              Reserva ahora
-                            </button>
+                            <Link to="https://api.whatsapp.com/send?phone=51942916064&text=%C2%A1Hola!%20Quisiera%20informaci%C3%B3n%20%F0%9F%98%8A" target="_blank" className="mt-5 font-work text-base tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-5 border border-black hover:border-transparent rounded"> Reserva </Link>
                         </div>
 
                       
